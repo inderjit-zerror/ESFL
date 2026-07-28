@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+
+* {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ///////////////////////////////////////////////////////// FONTS */
+
+@font-face {
+  font-family: HNM_FONT;
+  src: url('/fonts/HelveticaNeueMedium.otf');
+}
+
+.HNM_FONT{
+  font-family: HNM_FONT;
+}
+
+@font-face {
+  font-family: HNR_FONT;
+  src: url('/fonts/HelveticaNeueRoman.otf');
+}
+
+.HNR_FONT{
+ font-family: HNR_FONT;
+}
+
+
+.Paragraph_Small{
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.Paragraph_Medium{
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1rem;
+}
+
+.Heading_1{
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+/* ///////////////////////////////////////////////////////// CLASSES */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.scroller_none::-webkit-scrollbar {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.padding {
+  padding: 1rem;
+}
+@media (min-width: 750px) {
+  .padding {
+    padding: 2.5rem;
+  }
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.h-screen {
+  height: 100vh !important;
+  height: 100svh !important;
+}
+.container{
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
