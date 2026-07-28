@@ -12,6 +12,7 @@ export default function BrandSection({
   logo,
 
   buttonText = "View Range",
+  onButtonClick,
 
   bgColor = "bg-[#D52E12]",
   textColor = "text-white",
@@ -63,6 +64,8 @@ export default function BrandSection({
             </h3>
 
             <button
+              type="button"
+              onClick={onButtonClick}
               className={`${buttonBg} ${buttonTextColor} Paragraph_Small HNR_FONT mt-12 rounded-full px-8 py-2.5 uppercase transition hover:scale-105`}
             >
               {buttonText}

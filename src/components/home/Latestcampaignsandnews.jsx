@@ -121,7 +121,7 @@ export default function LatestCampaignsAndNews() {
             slidesPerView={{ base: 1, sm: 1.15, md: 2, lg: 2 }}
             gap={20}
             renderItem={(item) => (
-              <div className="group relative aspect-[4/3] rounded-xl overflow-hidden">
+              <div className="group relative aspect-[4/3]  rounded-xl overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}

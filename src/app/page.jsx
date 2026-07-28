@@ -6,6 +6,7 @@ import HomeCTA from "@/components/home/HomeCTA";
 import LatestCampaignsAndNews from "@/components/home/Latestcampaignsandnews";
 import PresentAcrossCountry from "@/components/home/Presentacrosscountry";
 import RamBandhuCategory from "@/components/home/Rambandhucategory";
+import SevenSection from "@/components/home/SevenSection";
 import Sticker from "@/components/home/Sticker";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -15,11 +16,12 @@ const HomePage = () => {
       <Hero />
       <Building />
       <Sticker />
-      <RamBandhuCategory/>
+      {/* <RamBandhuCategory/> */}
       <Factory />
       <PresentAcrossCountry/>
       <LatestCampaignsAndNews/>
       <HomeCTA />
+      <SevenSection/>
 
      
     </>

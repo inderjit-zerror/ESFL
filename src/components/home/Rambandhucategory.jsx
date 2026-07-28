@@ -5,49 +5,49 @@ import gsap from "gsap";
 
 const categoryProducts = {
   "GROUND SPICES": [
-    { id: "mirchi", name: "मिर्ची पावडर", bg: "bg-['']", image: "/images/home/IMG1.png" },
-    { id: "dhaniya", name: "धनिया पावडर", bg: "bg-['']", image: "/images/home/IMG2.png" },
-    { id: "haldi", name: "हल्दी पावडर", bg: "bg-['']", image: "/images/home/IMG3.png" },
+    { id: "mirchi", name: "मिर्ची पावडर", image: "/images/home/IMG1.png" },
+    { id: "dhaniya", name: "धनिया पावडर", image: "/images/home/IMG2.png" },
+    { id: "haldi", name: "हल्दी पावडर", image: "/images/home/IMG3.png" },
   ],
   "BLENDED SPICES": [
-    { id: "garam-masala", name: "गरम मसाला", bg: "bg-['']", image: "/images/home/IMG2.png" },
-    { id: "chana-masala", name: "चना मसाला", bg: "bg-['']", image: "/images/home/IMG3.png" },
-    { id: "pav-bhaji", name: "पावभाजी मसाला", bg: "bg-['']", image: "/images/home/IMG1.png" },
+    { id: "garam-masala", name: "गरम मसाला", image: "/images/home/IMG2.png" },
+    { id: "chana-masala", name: "चना मसाला", image: "/images/home/IMG3.png" },
+    { id: "pav-bhaji", name: "पावभाजी मसाला", image: "/images/home/IMG1.png" },
   ],
   "SIGNATURE PRODUCTS": [
-    { id: "kitchen-king", name: "किचन किंग", bg: "bg-['']", image: "/images/home/IMG3.png" },
-    { id: "biryani-masala", name: "बिरयानी मसाला", bg: "bg-['']", image: "/images/home/IMG1.png" },
-    { id: "meat-masala", name: "मीट मसाला", bg: "bg-['']", image: "/images/home/IMG2.png" },
+    { id: "kitchen-king", name: "किचन किंग", image: "/images/home/IMG3.png" },
+    { id: "biryani-masala", name: "बिरयानी मसाला", image: "/images/home/IMG1.png" },
+    { id: "meat-masala", name: "मीट मसाला", image: "/images/home/IMG2.png" },
   ],
   PICKLES: [
-    { id: "mango-pickle", name: "आम का अचार", bg: "bg-['']", image: "/images/home/IMG1.png" },
-    { id: "mixed-pickle", name: "मिक्स अचार", bg: "bg-['']", image: "/images/home/IMG2.png" },
-    { id: "chilli-pickle", name: "मिर्च का अचार", bg: "bg-['']", image: "/images/home/IMG3.png" },
+    { id: "mango-pickle", name: "आम का अचार", image: "/images/home/IMG1.png" },
+    { id: "mixed-pickle", name: "मिक्स अचार", image: "/images/home/IMG2.png" },
+    { id: "chilli-pickle", name: "मिर्च का अचार", image: "/images/home/IMG3.png" },
   ],
   PAPADS: [
-    { id: "urad-papad", name: "उड़द पापड़", bg: "bg-['']", image: "/images/home/IMG2.png" },
-    { id: "moong-papad", name: "मूंग पापड़", bg: "bg-['']", image: "/images/home/IMG1.png" },
-    { id: "masala-papad", name: "मसाला पापड़", bg: "bg-['']", image: "/images/home/IMG3.png" },
+    { id: "urad-papad", name: "उड़द पापड़", image: "/images/home/IMG2.png" },
+    { id: "moong-papad", name: "मूंग पापड़", image: "/images/home/IMG1.png" },
+    { id: "masala-papad", name: "मसाला पापड़", image: "/images/home/IMG3.png" },
   ],
   JAMS: [
-    { id: "mixed-fruit-jam", name: "मिक्स फ्रूट जैम", bg: "bg-['']", image: "/images/home/IMG3.png" },
-    { id: "strawberry-jam", name: "स्ट्रॉबेरी जैम", bg: "bg-['']", image: "/images/home/IMG2.png" },
-    { id: "pineapple-jam", name: "पाइनएप्पल जैम", bg: "bg-['']", image: "/images/home/IMG1.png" },
+    { id: "mixed-fruit-jam", name: "मिक्स फ्रूट जैम", image: "/images/home/IMG3.png" },
+    { id: "strawberry-jam", name: "स्ट्रॉबेरी जैम", image: "/images/home/IMG2.png" },
+    { id: "pineapple-jam", name: "पाइनएप्पल जैम", image: "/images/home/IMG1.png" },
   ],
   "BEVERAGE MIXES": [
-    { id: "lemon-mix", name: "नींबू मिक्स", bg: "bg-['']", image: "/images/home/IMG2.png" },
-    { id: "jaljeera", name: "जलजीरा", bg: "bg-['']", image: "/images/home/IMG3.png" },
-    { id: "thandai", name: "ठंडाई", bg: "bg-['']", image: "/images/home/IMG1.png" },
+    { id: "lemon-mix", name: "नींबू मिक्स", image: "/images/home/IMG2.png" },
+    { id: "jaljeera", name: "जलजीरा", image: "/images/home/IMG3.png" },
+    { id: "thandai", name: "ठंडाई", image: "/images/home/IMG1.png" },
   ],
   "SPICE MIXES": [
-    { id: "sambar-mix", name: "सांबर मिक्स", bg: "bg-['']", image: "/images/home/IMG3.png" },
-    { id: "rasam-mix", name: "रसम मिक्स", bg: "bg-['']", image: "/images/home/IMG1.png" },
-    { id: "curry-mix", name: "करी मिक्स", bg: "bg-['']", image: "/images/home/IMG2.png" },
+    { id: "sambar-mix", name: "सांबर मिक्स", image: "/images/home/IMG3.png" },
+    { id: "rasam-mix", name: "रसम मिक्स", image: "/images/home/IMG1.png" },
+    { id: "curry-mix", name: "करी मिक्स", image: "/images/home/IMG2.png" },
   ],
   SNACKS: [
-    { id: "namkeen", name: "नमकीन", bg: "bg-['']", image: "/images/home/IMG1.png" },
-    { id: "sev", name: "सेव", bg: "bg-['']", image: "/images/home/IMG2.png" },
-    { id: "chivda", name: "चिवड़ा", bg: "bg-['']", image: "/images/home/IMG3.png" },
+    { id: "namkeen", name: "नमकीन", image: "/images/home/IMG1.png" },
+    { id: "sev", name: "सेव", image: "/images/home/IMG2.png" },
+    { id: "chivda", name: "चिवड़ा", image: "/images/home/IMG3.png" },
   ],
 };
 
@@ -100,7 +100,6 @@ export default function RamBandhuCategory() {
 
     const cards = cardRefs.current.filter(Boolean);
 
-    // Animate current cards out, then swap data, then animate new cards in
     gsap.to(cards, {
       y: -24,
       opacity: 0,
@@ -115,7 +114,6 @@ export default function RamBandhuCategory() {
     });
   };
 
-  // Whenever products change (after category swap), animate the new cards in
   useEffect(() => {
     const cards = cardRefs.current.filter(Boolean);
     if (!cards.length) return;
@@ -146,13 +144,19 @@ export default function RamBandhuCategory() {
   };
 
   return (
-    <section ref={sectionRef} className="bg-[#fdf6ec] h-svh px-6 py-14 flex justify-center relative items-center">
+    <section
+      ref={sectionRef}
+      className="bg-[#fdf6ec] w-full px-6 py-14 relative"
+    >
+      <div className="absolute bottom-6 w-[8%] right-8 z-10">
+        <img
+          src="/images/home/RBMLogo.png"
+          alt="IMG"
+          className="w-full object-cover object-center"
+        />
+      </div>
 
-  <div className=" absolute bottom-15 w-[8%] right-20 z-99">
-            <img src="/images/home/RBMLogo.png" alt="IMG" className="w-full object-cover object-center" />
-          </div>
-
-      <div className="px-10 mx-auto w-full h-full ">
+      <div className="px-4 sm:px-10 mx-auto w-full max-w-5xl">
         {/* Header */}
         <div className="rb-header">
           <h2 className="Heading_1 HNM_FONT text-[#c8102e] tracking-tight">
@@ -186,34 +190,26 @@ export default function RamBandhuCategory() {
         </div>
 
         {/* Product cards */}
-        <div className="relative  w-[80%] h-full mx-auto pt-[15vh] ">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 place-items-center ">
+        <div className="relative w-full mx-auto pt-10 pb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 place-items-center">
             {products.map((p, i) => (
               <div
                 key={p.id}
                 ref={(el) => (cardRefs.current[i] = el)}
                 onMouseEnter={(e) => handleCardEnter(e.currentTarget)}
                 onMouseLeave={(e) => handleCardLeave(e.currentTarget)}
-                className={`relative w-40 sm:w-57 aspect-[4/5] rounded-2xl overflow-hidden  cursor-pointer ${p.bg}`}
+                className="relative w-40 sm:w-57 aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer"
               >
                 <img
                   src={p.image}
                   alt={p.name}
                   className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90"
                 />
-                {/* <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/40 to-transparent">
-                  <p className="text-white text-sm font-bold text-center">
-                    {p.name}
-                  </p>
-                </div> */}
               </div>
             ))}
           </div>
-
-          {/* Logo badge */}
         </div>
       </div>
-        
     </section>
   );
 }
