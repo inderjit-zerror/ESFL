@@ -69,7 +69,7 @@ const Sticker = () => {
         <BrandSection
           V={'B2'}
           className="sticky top-0 left-0 DIVC-1"
-          title="RAM BANDHU"
+          title="RAM BANDHU'"
           subtitle="Ground & blended spices"
           description={`Ram Bandhu has been a trusted name in Indian kitchens for
 over 32 years, offering a wide range of spices, pickles,
@@ -81,7 +81,7 @@ of Indian consumers. with the aim of bringing convenience to the art of cooking.
           highlight={`Experience gastronomic ecstasy with
 Ram Bandhu – Aapka Taste Partner!`}
           buttonText="View Range"
-          heroImage="/images/home/RamBandhu.png"
+          heroImage="/images/home/RamBandhu.jpg"
           logo="/images/home/RamBandhuLogo.png"
           onButtonClick={() => setShowCategory(true)}
         />
@@ -95,14 +95,14 @@ Ram Bandhu – Aapka Taste Partner!`}
           buttonBg="bg-[#C3071C]"
           buttonTextColor="text-[white]"
           className=" absolute top-[110%] left-0 BrandSection2"
-          title="Temptin"
+          title="Temptin'"
           subtitle="Ground & blended spices"
           description={`The youthful brand of Temptin’ symbolises the temptation that is associated with lip smacking culinary delights. The very sight of delicious food is an enticement that fills us with the desire to relish it. 
 
 Brand Temptin' stands for the same feeling and makes your food tempting and irresistible. The range consists of Ketchup, Sauces, Dips, Chutneys, Chinese Spices etc.`}
           highlight={``}
           buttonText="View Range"
-          heroImage="/images/home/Temptin.png"
+          heroImage="/images/home/Temptin.jpg"
           logo="/images/home/TemptinLogo.png"
            onButtonClick={() => setShowCategory(true)}
         />
@@ -116,14 +116,14 @@ Brand Temptin' stands for the same feeling and makes your food tempting and irre
           buttonBg="bg-[#F4BF5F]"
           buttonTextColor="text-[#B32727]"
           className=" absolute top-[110%] left-0 BrandSection3 z-99"
-          title="RBM"
+          title="RBM'"
           subtitle="Premium blends & beverage mixes"
           description={`RBM stands for ‘Ram Bandhu Masale’. Priced strategically the products under this brand targets the price conscious consumer without compromising on quality or taste.  
 
  Meat Masala, Chicken Masala, Mutton Biryani Mix, Chicken Gravy are some of the products in the RBM line-up.`}
           highlight={``}
           buttonText="View Range"
-          heroImage="/images/home/RBM.png"
+          heroImage="/images/home/RBM.jpg"
           logo="/images/home/RBMLogo.png"
            onButtonClick={() => setShowCategory(true)}s
         />

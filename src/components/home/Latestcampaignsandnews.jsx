@@ -88,10 +88,10 @@ export default function LatestCampaignsAndNews() {
   }, []);
 
   return (
-    <section className="bg-[#fdf6ec] py-20 px-6">
-      <div className=" mx-auto p-10">
+    <section className="bg-[#fdf6ec] py-8 px-6">
+      <div className=" mx-auto p-10 py-5">
         {/* Header */}
-        <div ref={headerRef} className="text-center max-w-xl mx-auto mb-16">
+        <div ref={headerRef} className="text-center max-w-xl mx-auto mb-4">
           <p className=" Paragraph_Small HNR_FONT mb-5  text-[#c8102e]">
             ON AIR NOW
           </p>
@@ -109,7 +109,7 @@ export default function LatestCampaignsAndNews() {
 
         {/* Campaigns */}
         <div className="mb-20">
-          <h3 className="Paragraph_Medium HNM_FONT text-neutral-900 mb-6">
+          <h3 className="Paragraph_Medium HNM_FONT w-fit flex translate-y-[400%] text-neutral-900 mb-6">
             CAMPAIGNS
           </h3>
 
@@ -149,7 +149,7 @@ export default function LatestCampaignsAndNews() {
 
         {/* In the news */}
         <div>
-          <h3 className="Paragraph_Medium HNM_FONT text-neutral-900 mb-6">
+          <h3 className="Paragraph_Medium HNM_FONT flex translate-y-[400%] text-neutral-900 mb-6">
             IN THE NEWS
           </h3>
 
@@ -166,7 +166,7 @@ export default function LatestCampaignsAndNews() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <p className="mt-4 Paragraph_Small MNM_FONT text-[#c8102e]">
+                <p className="mt-4 Paragraph_Small MNM_FONT text-[#c8102e] font-semibold!">
                   {item.date}
                 </p>
                 <p className="mt-2 Paragraph_Medium MNM_FONT text-neutral-800 ">
@@ -174,7 +174,7 @@ export default function LatestCampaignsAndNews() {
                 </p>
                 <a
                   href="#"
-                  className="mt-2 text-sm Paragraph_Small MNM_FONT text-[#c8102e] underline cursor-pointer underline-offset-2 hover:text-[#a80d26]"
+                  className="mt-2 text-sm Paragraph_Small MNM_FONT font-semibold! text-[#c8102e] underline cursor-pointer underline-offset-2 hover:text-[#a80d26]"
                 >
                   Read More
                 </a>

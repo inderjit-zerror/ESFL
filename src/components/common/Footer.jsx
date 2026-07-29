@@ -16,101 +16,17 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#D42E12] text-white pt-10 ">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* Brand */}
-          <div>
-            <div className="w-[100px]">
-            <img src="/images/nav/logo.png" alt="IMG" className="w-full object-cover object-center" />
-            </div>
-            <p className="mt-5   text-white/90 Paragraph_Small  max-w-xs">
-              Empire Spices &amp; Foods Ltd. is committed to bringing
-              authentic, world-class quality to every Indian household.
-            </p>
+    <footer className="bg-[#D42E12] text-white">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10">
+        {/* Top row: brand + socials, separated from the link grid */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 py-8 border-b border-white/15">
+          <div className="w-[100px]">
+            <img
+              src="/images/nav/logo.png"
+              alt="Empire Spices & Foods Ltd."
+              className="w-full object-cover object-center"
+            />
           </div>
-
-          {/* Sitemap */}
-          <div>
-            <h3 className="text-xs font-bold tracking-widest text-white/90 mb-4">
-              SITEMAP
-            </h3>
-            <ul className="space-y-1">
-              {sitemapLinks.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="Paragraph_Small  hover:underline"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h3 className="text-xs font-bold tracking-widest text-white/90 mb-4">
-              SUPPORT
-            </h3>
-            <ul className="space-y-1">
-              {supportLinks.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="Paragraph_Small  hover:underline"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Customer Care */}
-          <div>
-            <h3 className="text-xs font-bold tracking-widest text-white/90 mb-4">
-              CUSTOMER CARE
-            </h3>
-
-            <div className="mb-4">
-              <a
-                href="mailto:care@esfl.co.in"
-                className="Paragraph_Small  hover:underline"
-              >
-                care@esfl.co.in
-              </a>
-              <p className="text-xs text-white/80 mt-1">Write to us anytime</p>
-            </div>
-
-            <div className="mb-4">
-              <a
-                href="tel:+912240001234"
-                className="Paragraph_Small  hover:underline"
-              >
-                +91 22 4000 1234
-              </a>
-              <p className="text-xs text-white/80 mt-1">Mon–Sat, 9am–6pm IST</p>
-            </div>
-
-            <div>
-              <p className="Paragraph_Small ">
-                ESFL House, MIDC Industrial Area
-              </p>
-              <p className="Paragraph_Small  text-white/80 mt-1">
-                Andheri East, Mumbai 400093, India
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className="border-t border-white/20 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="Paragraph_Small  text-white/80">
-            © 2026 Empire Spices &amp; Foods Ltd. All rights reserved. ·
-            esfl.co.in
-          </p>
 
           <div className="flex items-center gap-3">
             <a
@@ -163,6 +79,101 @@ export default function Footer() {
               </svg>
             </a>
           </div>
+        </div>
+
+        {/* Main grid: tagline on its own, links separated by hairline rules on desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-10 py-14">
+          <div className="md:col-span-4 md:pr-8">
+            <p className="Paragraph_Small text-white/90 max-w-xs leading-relaxed">
+              Empire Spices &amp; Foods Ltd. is committed to bringing
+              authentic, world-class quality to every Indian household.
+            </p>
+          </div>
+
+          <div className="md:col-span-2 md:pl-8 md:border-l md:border-white/15">
+            <h3 className="text-xs font-bold tracking-widest text-white/90 mb-4">
+              SITEMAP
+            </h3>
+            <ul className="space-y-2">
+              {sitemapLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="Paragraph_Small hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:col-span-2 md:pl-8 md:border-l md:border-white/15">
+            <h3 className="text-xs font-bold tracking-widest text-white/90 mb-4">
+              SUPPORT
+            </h3>
+            <ul className="space-y-2">
+              {supportLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="Paragraph_Small hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:col-span-4 md:pl-8 md:border-l md:border-white/15">
+            <h3 className="text-xs font-bold tracking-widest text-white/90 mb-4">
+              CUSTOMER CARE
+            </h3>
+
+            <div className="grid grid-cols-2 gap-6">
+              <div>
+                <a
+                  href="mailto:care@esfl.co.in"
+                  className="Paragraph_Small hover:underline"
+                >
+                  care@esfl.co.in
+                </a>
+                <p className="text-xs text-white/70 mt-1">
+                  Write to us anytime
+                </p>
+              </div>
+
+              <div>
+                <a
+                  href="tel:+912240001234"
+                  className="Paragraph_Small hover:underline"
+                >
+                  +91 22 4000 1234
+                </a>
+                <p className="text-xs text-white/70 mt-1">
+                  Mon–Sat, 9am–6pm IST
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6">
+              <p className="Paragraph_Small">
+                ESFL House, MIDC Industrial Area
+              </p>
+              <p className="Paragraph_Small text-white/70 mt-1">
+                Andheri East, Mumbai 400093, India
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="border-t border-white/15 py-6 flex justify-center items-center">
+          <p className="Paragraph_Small text-white/80 text-center sm:text-left ">
+            © 2026 Empire Spices &amp; Foods Ltd. All rights reserved. ·
+            esfl.co.in
+          </p>
         </div>
       </div>
     </footer>

@@ -17,9 +17,9 @@ body {
   src: url('/fonts/HelveticaNeueMedium.otf');
 }
 
-.HNM_FONT{
+/* .HNM_FONT{
   font-family: HNM_FONT;
-}
+} */
 
 @font-face {
   font-family: HNR_FONT;
@@ -30,6 +30,12 @@ body {
  font-family: HNR_FONT;
 }
 
+@font-face {
+  font-family: DD;
+  src: url('/fonts/D1.woff2');
+}
+
+
 
 .Paragraph_Small{
   font-size: 0.8rem;
@@ -38,13 +44,14 @@ body {
 .Paragraph_Medium{
   font-size: 1rem;
   font-weight: 100;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 
 .Heading_1{
   font-size: 3rem;
   line-height: 3rem;
   font-weight: 600;  
+  font-family: DD;
 }
 
 /* ///////////////////////////////////////////////////////// CLASSES */

@@ -28,11 +28,11 @@ const SocialLable = ({ lable, text }) => {
 };
 
 const imgArr = [
-  `/images/home/RamBandhu.png`,
+  `/images/home/RamBandhu.jpg`,
   `/images/home/P2.png`,
-  `/images/home/RBM.png`,
-  `/images/home/RamBandhu.png`,
-  `/images/home/Temptin.png`,
+  `/images/home/RBM.jpg`,
+  `/images/home/RamBandhu.jpg`,
+  `/images/home/Temptin.jpg`,
 ];
 
 const CustomImg = () => {
@@ -61,13 +61,13 @@ const CustomImg = () => {
               </div>
 
               {/* Btn */}
-                {/* <a target="blank" href="https://www.instagram.com/RambandhuOfficial">
-              <div className="w-fit h-fit absolute top-4 left-4 Font3 text-white px-[20px] py-[10px] rounded-[10px]  bg-[#D8300F] flex justify-center items-center gap-[10px] z-40 hover:px-[25px] transition-all duration-500">
+                <a target="blank" href="https://www.instagram.com/RambandhuOfficial">
+              <div className="w-fit h-fit absolute top-4 left-4 Font3 text-white px-[10px] py-[10px] rounded-full  bg-[#D8300F] flex justify-center items-center gap-[10px] z-40 transition-all duration-500">
                 <FaInstagram />
 
-                Instagram
+                {/* Instagram */}
               </div>
-              </a> */}
+              </a>
               
             </div>
           );
@@ -104,21 +104,20 @@ const SevenSection = () => {
 
   return (
     <div className="w-full h-fit flex flex-col overflow-hidden  max-sm:translate-y-[-30dvh]">
-      <div className="w-full h-fit flex flex-col bg-[#F5C451] text-white py-[6vw] max-md:pt-[50px] justify-center items-center ">
+      <div className="w-full h-fit flex flex-col bg-[#F5C451] text-white py-[4vw] max-md:pt-[50px] justify-center items-center ">
         {/* SubText */}
-        <div className="w-full h-fit Paragraph_Medium MNM_FONT  text-[#D8300F] flex justify-center items-center  ">
+        {/* <div className="w-full h-fit Paragraph_Medium MNM_FONT  text-[#D8300F] flex justify-center items-center  ">
           
-            Stay in Touch
-        </div>
+            
+        </div> */}
 
         {/* Title */}
         <div className="w-fit h-fit flex flex-col Heading_1 MNM_FONT text-[#D8300F] font-semibold text-[5vw] mt-[1vw] leading-[4vw] Font3 justify-center items-center max-md:mt-[20px] max-md:text-[7vw] max-md:leading-[6vw]">
           <div className="w-fit h-fit flex uppercase justify-center items-center">
-            <h1>Follow</h1>
+            {/* <h1>Follow</h1> */}
+            <h1>Stay in Touch</h1>
           </div>
-          <div className="w-fit h-fit flex uppercase justify-center items-center">
-            <h1>@RambandhuOfficial</h1>
-          </div>
+         
           <div className="w-fit h-fit flex uppercase justify-center items-center">
             <h1>For More</h1>
           </div>

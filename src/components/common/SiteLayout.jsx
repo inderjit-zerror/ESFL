@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { ViewTransitions } from "next-view-transitions";
+import WhatsAppButton from "./Whatsappbutton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,6 +42,7 @@ export default function SiteLayout({ children }) {
         <footer>
           <Footer />
         </footer>
+        <WhatsAppButton phone="" message="Hi! I'd like to know more about your products." />
       </LenisScroll>
     </ViewTransitions>
 

@@ -94,11 +94,11 @@ export default function PresentAcrossCountry() {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen overflow-hidden bg-[#d8300f] px-6 py-20 flex  "
+      className="relative h-[70vh] overflow-hidden bg-[#d8300f] px-6 py-20 flex  "
     >
      
 
-      <img src="/images/home/FLOWER.png" alt="IMG" className="w-[20%] aspect-square absolute  right-[8%] top-[2%] z-99" />
+      <img src="/images/home/FLOWER.png" alt="IMG" className="w-[15%] aspect-square absolute  right-[0%] top-[2%] z-99" />
 
       <div className="relative px-20 mx-auto  w-full grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-16 items-center">
         {/* Left: headline + products */}
@@ -141,12 +141,12 @@ export default function PresentAcrossCountry() {
         </div>
 
         {/* Right: stats grid */}
-        <div className="grid grid-cols-2 gap-x-8 gap-y-10 mt-auto pb-[20vh] mx-auto">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-10 mt-auto pb-[5vh] mx-auto">
           {stats.map((stat, i) => (
             <div key={stat.id} className="psac-fade">
               <p
                 ref={(el) => (numberRefs.current[i] = el)}
-                className="text-[#f5c451] font-extrabold text-4xl sm:text-5xl leading-none"
+                className="text-[#f5c451] font-extrabold text-6xl sm:text-5xl leading-none"
               >
                 0{stat.suffix}
               </p>

@@ -432,7 +432,7 @@ export default function Building() {
         {/* Top Text */}
         <div className="mb-4 flex items-center gap-3">
           <span className="Paragraph_Small uppercase HNR_FONT text-[#D9472B]">
-            Since 1993 • Guntur To Every Indian Kitchen
+            Winning the hearts of our consumers since 1994
           </span>
         </div>
 
@@ -450,8 +450,8 @@ export default function Building() {
 
         {/* Buttons */}
         <div className="mt-10 flex gap-5 max-sm:flex-col">
-          <BTN txt={`Explore Our Brands`} variant="B1" />
-          <BTN txt={`Become A Partner`} variant="B2" />
+          <BTN txt={`Know More`} variant="B1" />
+          <BTN txt={`Become Channel Partner`} variant="B2" />
         </div>
       </div>
     </section>
