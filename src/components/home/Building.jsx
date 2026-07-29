@@ -392,7 +392,7 @@ export default function Building() {
     <section
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative flex min-h-[80svh] w-full mx-auto items-center justify-center px-6 overflow-hidden"
+      className="relative flex min-h-[60svh] w-full mx-auto items-center justify-center px-6 overflow-hidden"
     >
       {/* Mouse trail images */}
       {trail.map((item) => (

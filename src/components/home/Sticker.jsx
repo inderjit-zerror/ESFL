@@ -69,7 +69,7 @@ const Sticker = () => {
         <BrandSection
           V={'B2'}
           className="sticky top-0 left-0 DIVC-1"
-          title="RAM BANDHU'"
+          title="RAM BANDHU"
           subtitle="Ground & blended spices"
           description={`Ram Bandhu has been a trusted name in Indian kitchens for
 over 32 years, offering a wide range of spices, pickles,
@@ -116,7 +116,7 @@ Brand Temptin' stands for the same feeling and makes your food tempting and irre
           buttonBg="bg-[#F4BF5F]"
           buttonTextColor="text-[#B32727]"
           className=" absolute top-[110%] left-0 BrandSection3 z-99"
-          title="RBM'"
+          title="RBM"
           subtitle="Premium blends & beverage mixes"
           description={`RBM stands for ‘Ram Bandhu Masale’. Priced strategically the products under this brand targets the price conscious consumer without compromising on quality or taste.  
 

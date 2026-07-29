@@ -118,9 +118,7 @@ const SevenSection = () => {
             <h1>Stay in Touch</h1>
           </div>
          
-          <div className="w-fit h-fit flex uppercase justify-center items-center">
-            <h1>For More</h1>
-          </div>
+          
         </div>
 
         {/* BTN`S */}

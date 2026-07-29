@@ -7,10 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { id: "units", value: 32, suffix: "", label: "MANUFACTURING UNITS" },
-  { id: "depots", value: 31, suffix: "", label: "DEPOTS" },
   { id: "sku", value: 300, suffix: "+", label: "STOCK KEEPING UNITS" },
-  { id: "employees", value: 10, suffix: "k+", label: "EMPLOYEES" },
+  { id: "units", value: 32, suffix: "", label: "Years Legacy" },
+  { id: "depots", value: 20, suffix: "", label: "Countries Presence   " },
+  { id: "employees", value: 2, suffix: "L+", label: " Retailers Supplied" },
 ];
 
 export default function PresentAcrossCountry() {
@@ -94,26 +94,27 @@ export default function PresentAcrossCountry() {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[70vh] overflow-hidden bg-[#d8300f] px-6 py-20 flex  "
+      className="relative h-[80vh] overflow-hidden bg-[#d8300f] px-0 py-20 flex  "
     >
      
 
-      <img src="/images/home/FLOWER.png" alt="IMG" className="w-[15%] aspect-square absolute  right-[0%] top-[2%] z-99" />
+      <img src="/images/home/FLOWER.png" alt="IMG" className="w-[15%] aspect-square absolute rotate-z-180  right-[2%] bottom-[2%] z-99" />
+      <img src="/images/home/FLOWER.png" alt="IMG" className="w-[15%] aspect-square absolute rotate-z-40  right-[25%] bottom-[0%] z-99" />
 
-      <div className="relative px-20 mx-auto  w-full grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-16 items-center">
+      <div className="relative px-0 mx-auto   w-full grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-10 items-center">
         {/* Left: headline + products */}
-        <div className="relative">
+        <div className="relative ">
           {/* Product images flanking the headline */}
-          <div className="psac-fade absolute -left-4 top-6 w-14 sm:w-16">
+          {/* <div className="psac-fade absolute -left-4 top-6 w-14 sm:w-16">
             <img
               ref={bottleRef}
               src="/images/home/BT1.png"
               alt="Product bottle"
               className="w-full h-auto will-change-transform"
             />
-          </div>
+          </div> */}
 
-          <div className="psac-fade absolute right-4 sm:right-20 top-40 w-20 sm:w-24">
+          <div className="psac-fade absolute right-4 sm:right-20  top-40 w-20 sm:w-24">
             <img
               ref={packRef}
               src="/images/home/YellowPack.png"
@@ -122,15 +123,15 @@ export default function PresentAcrossCountry() {
             />
           </div>
 
-          <h2 className="psac-fade pl-16 sm:pl-20 text-[#f5c451] font-extrabold uppercase leading-[1.05] text-4xl sm:text-5xl md:text-6xl tracking-tight">
+          <h2 className="psac-fade pl-16 sm:pl-20 text-[#f5c451] Heading_1 text-[5rem]! leading-[5rem]! font-extrabold uppercase leading-[1.05] text-4xl sm:text-5xl md:text-6xl tracking-tight">
             Present
-            <br />
+            
             Across the
-            <br />
+            
             Country to
-            <br />
+            
             Serve You
-            <br />
+            
             Incessantly
           </h2>
 
@@ -141,12 +142,12 @@ export default function PresentAcrossCountry() {
         </div>
 
         {/* Right: stats grid */}
-        <div className="grid grid-cols-2 gap-x-8 gap-y-10 mt-auto pb-[5vh] mx-auto">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-10 Heading_1 mt-auto pb-[22vh] mx-auto">
           {stats.map((stat, i) => (
             <div key={stat.id} className="psac-fade">
               <p
                 ref={(el) => (numberRefs.current[i] = el)}
-                className="text-[#f5c451] font-extrabold text-6xl sm:text-5xl leading-none"
+                className="text-[#f5c451] font-extrabold text-6xl sm:text-[5rem]! leading-none"
               >
                 0{stat.suffix}
               </p>

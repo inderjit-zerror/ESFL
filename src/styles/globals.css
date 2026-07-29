@@ -35,6 +35,9 @@ body {
   src: url('/fonts/D1.woff2');
 }
 
+.DD_Font{
+   font-family: DD;
+}
 
 
 .Paragraph_Small{

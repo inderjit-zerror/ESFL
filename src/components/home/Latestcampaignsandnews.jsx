@@ -89,15 +89,15 @@ export default function LatestCampaignsAndNews() {
 
   return (
     <section className="bg-[#fdf6ec] py-8 px-6">
-      <div className=" mx-auto p-10 py-5">
+      <div className=" mx-auto px-10 pt-10">
         {/* Header */}
-        <div ref={headerRef} className="text-center max-w-xl mx-auto mb-4">
+        <div ref={headerRef} className="text-center  mx-auto mb-0">
           <p className=" Paragraph_Small HNR_FONT mb-5  text-[#c8102e]">
             ON AIR NOW
           </p>
           <h1 className=" Heading_1 HNM_FONT text-neutral-900 leading-tight">
             LATEST CAMPAIGNS
-            <br />
+            
             &amp; NEWS
           </h1>
           <p className="my-4  Paragraph_Medium text-neutral-600">
@@ -109,7 +109,7 @@ export default function LatestCampaignsAndNews() {
 
         {/* Campaigns */}
         <div className="mb-20">
-          <h3 className="Paragraph_Medium HNM_FONT w-fit flex translate-y-[400%] text-neutral-900 mb-6">
+          <h3 className="Paragraph_Medium text-[1.5rem]! DD_Font w-fit flex translate-y-[280%] text-neutral-900 mb-6">
             CAMPAIGNS
           </h3>
 
@@ -149,7 +149,7 @@ export default function LatestCampaignsAndNews() {
 
         {/* In the news */}
         <div>
-          <h3 className="Paragraph_Medium HNM_FONT flex translate-y-[400%] text-neutral-900 mb-6">
+          <h3 className="Paragraph_Medium DD_Font text-[1.5rem]! flex translate-y-[280%] text-neutral-900 mb-6">
             IN THE NEWS
           </h3>
 

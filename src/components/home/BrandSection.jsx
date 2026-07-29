@@ -30,10 +30,10 @@ export default function BrandSection({
 }) {
   return (
     <section
-      className={`${bgColor} ${className} w-full h-svh overflow-hidden`}
+      className={`${bgColor} ${className} w-full h-svh overflow-hidden flex justify-center items-center `}
     >
       <div
-        className={`mx-auto grid min-h-screen pr-5 py-5  grid-cols-2 ${
+        className={`mx-auto grid h-fit pr-10 py-5  grid-cols-2 ${
           reverse ? "md:[&>*:first-child]:order-2" : ""
         } max-md:grid-cols-1`}
       >
@@ -78,7 +78,7 @@ export default function BrandSection({
         </div>
 
         {/* Right Image */}
-        <div className="relative min-h-[700px] group overflow-hidden ">
+        <div className="relative h-[75vh] group overflow-hidden mt-[10vh]  ">
 
           <Image
             src={heroImage}
