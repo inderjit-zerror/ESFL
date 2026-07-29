@@ -20,7 +20,7 @@ const HomePage = () => {
       <Factory />
       <PresentAcrossCountry/>
       <LatestCampaignsAndNews/>
-      <HomeCTA />
+      {/* <HomeCTA /> */}
       <SevenSection/>
 
      

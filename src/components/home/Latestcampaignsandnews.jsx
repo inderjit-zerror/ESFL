@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Carousel from "./Carousel";
+import BTN from "../common/BTN";
 
 const campaigns = [
   {
@@ -99,15 +100,11 @@ export default function LatestCampaignsAndNews() {
             <br />
             &amp; NEWS
           </h1>
-          <p className="mt-4  Paragraph_Medium text-neutral-600">
+          <p className="my-4  Paragraph_Medium text-neutral-600">
             Latest campaigns, media coverage and company updates.
           </p>
-          <button
-            type="button"
-            className="mt-6 Paragraph_Small inline-flex items-center justify-center rounded-full bg-[#c8102e] px-7 py-2.5 text-xs font-bold tracking-widest text-white hover:bg-[#a80d26] transition-colors"
-          >
-            VIEW ALL
-          </button>
+         
+          <BTN  txt={"VIEW ALL"} variant={"B1"}/>
         </div>
 
         {/* Campaigns */}

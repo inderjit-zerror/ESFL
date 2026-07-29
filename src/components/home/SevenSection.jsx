@@ -8,6 +8,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import gsap from "gsap";
 import { GoArrowUpRight } from "react-icons/go";
+import BTN from "../common/BTN";
 
 const SocialLable = ({ lable, text }) => {
   return (
@@ -53,21 +54,20 @@ const CustomImg = () => {
               {/* BlackScreen */}
               <div className="w-full h-full absolute top-0 transition-all duration-500 opacity-0 left-0 bg-[#00000071] z-[20] group-hover:opacity-100 flex justify-center items-center">
                 <div className="w-fit h-fit flex Font3  justify-center text-white items-center gap-[10px] text-center">
-                  <p className="text-[18px] leading-[18px]">View Post</p>
-                  <div className="w-[20px] h-[22px] bg-white flex justify-center items-center text-black rounded-lg">
-                    <GoArrowUpRight className="font-[10px]" />
-                  </div>
+                  
+                   <BTN  txt={"View Post"} variant={"B1"}/>
+                 
                 </div>
               </div>
 
               {/* Btn */}
-                <a target="blank" href="https://www.instagram.com/RambandhuOfficial">
+                {/* <a target="blank" href="https://www.instagram.com/RambandhuOfficial">
               <div className="w-fit h-fit absolute top-4 left-4 Font3 text-white px-[20px] py-[10px] rounded-[10px]  bg-[#D8300F] flex justify-center items-center gap-[10px] z-40 hover:px-[25px] transition-all duration-500">
                 <FaInstagram />
 
                 Instagram
               </div>
-              </a>
+              </a> */}
               
             </div>
           );
@@ -104,16 +104,15 @@ const SevenSection = () => {
 
   return (
     <div className="w-full h-fit flex flex-col overflow-hidden  max-sm:translate-y-[-30dvh]">
-      <div className="w-full h-fit flex flex-col bg-white text-white py-[6vw] max-md:pt-[50px] justify-center items-center ">
+      <div className="w-full h-fit flex flex-col bg-[#F5C451] text-white py-[6vw] max-md:pt-[50px] justify-center items-center ">
         {/* SubText */}
-        <div className="w-full h-fit  flex justify-center items-center  ">
-          <span className="Font3 w-fit h-fit rounded-sm text-[1.4rem] leading-[1.4rem] px-[13px] py-[7px]  bg-[#D8300F] uppercase">
+        <div className="w-full h-fit Paragraph_Medium MNM_FONT  text-[#D8300F] flex justify-center items-center  ">
+          
             Stay in Touch
-          </span>
         </div>
 
         {/* Title */}
-        <div className="w-fit h-fit flex flex-col Heading_1 MNM_FONT text-[#D8300F] font-semibold text-[5vw] mt-[2vw] leading-[4vw] Font3 justify-center items-center max-md:mt-[20px] max-md:text-[7vw] max-md:leading-[6vw]">
+        <div className="w-fit h-fit flex flex-col Heading_1 MNM_FONT text-[#D8300F] font-semibold text-[5vw] mt-[1vw] leading-[4vw] Font3 justify-center items-center max-md:mt-[20px] max-md:text-[7vw] max-md:leading-[6vw]">
           <div className="w-fit h-fit flex uppercase justify-center items-center">
             <h1>Follow</h1>
           </div>
@@ -128,22 +127,17 @@ const SevenSection = () => {
         {/* BTN`S */}
         <div className="w-full h-fit flex justify-center Paragraph_Medium MNM_FONT items-center gap-[10px] mt-[40px]">
           <a target="blank" href="https://www.instagram.com/RambandhuOfficial">
-            <SocialLable
-              lable={<FaInstagram className=" Paragraph_Medium MNM_FONT" />}
-              text={"Instagram"}
-            />
+
+           <BTN  txt={"Instagram"} variant={"B1"}/>
+           
           </a>
           <a target="blank" href="https://www.facebook.com/RamBandhuOfficial">
-          <SocialLable
-            lable={<FaFacebook className=" Paragraph_Medium MNM_FONT" />}
-            text={"Facebook"}
-          />
+          <BTN  txt={"Facebook"} variant={"B1"}/>
+          
             </a>
           <a target="blank" href="https://x.com/RambandhuMasale">
-          <SocialLable
-            lable={<FaXTwitter className=" Paragraph_Medium MNM_FONT" />}
-            text={"Twiter"}
-          />
+           <BTN  txt={"Twitter"} variant={"B1"}/>
+          
           </a>
         </div>
 

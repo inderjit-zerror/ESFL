@@ -1,12 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import BTN from "../common/BTN";
 
 export default function BrandSection({
   title,
   subtitle,
   description,
   highlight,
+  V,
 
   heroImage,
   logo,
@@ -63,13 +65,15 @@ export default function BrandSection({
               {highlight}
             </h3>
 
-            <button
-              type="button"
+            <div
+              
               onClick={onButtonClick}
-              className={`${buttonBg} ${buttonTextColor} Paragraph_Small HNR_FONT mt-12 rounded-full px-8 py-2.5 uppercase transition hover:scale-105`}
+              className={` mt-12 `}
             >
-              {buttonText}
-            </button>
+            <BTN txt={buttonText} variant={V}/>
+              
+            </div>
+
           </div>
         </div>
 

@@ -67,6 +67,7 @@ const Sticker = () => {
     <div className="w-full h-[200svh] relative flex StickeyHeroContMAin1">
       <div className="w-full h-svh flex sticky top-0 left-0">
         <BrandSection
+          V={'B2'}
           className="sticky top-0 left-0 DIVC-1"
           title="RAM BANDHU"
           subtitle="Ground & blended spices"
@@ -86,6 +87,7 @@ Ram Bandhu – Aapka Taste Partner!`}
         />
 
         <BrandSection
+        V={'B1'}
           bgColor="bg-[#FFC55C]"
           textColor="text-[#D42E12]"
           titleColor="text-[#C3071C]"
@@ -102,16 +104,18 @@ Brand Temptin' stands for the same feeling and makes your food tempting and irre
           buttonText="View Range"
           heroImage="/images/home/Temptin.png"
           logo="/images/home/TemptinLogo.png"
+           onButtonClick={() => setShowCategory(true)}
         />
 
         <BrandSection
+        V={'B2'}
           bgColor="bg-[#641409]"
           textColor="text-[white]"
           titleColor="text-[#FFC55C]"
           highlightColor="text-[white]"
           buttonBg="bg-[#F4BF5F]"
           buttonTextColor="text-[#B32727]"
-          className=" absolute top-[110%] left-0 BrandSection3"
+          className=" absolute top-[110%] left-0 BrandSection3 z-99"
           title="RBM"
           subtitle="Premium blends & beverage mixes"
           description={`RBM stands for ‘Ram Bandhu Masale’. Priced strategically the products under this brand targets the price conscious consumer without compromising on quality or taste.  
@@ -121,6 +125,7 @@ Brand Temptin' stands for the same feeling and makes your food tempting and irre
           buttonText="View Range"
           heroImage="/images/home/RBM.png"
           logo="/images/home/RBMLogo.png"
+           onButtonClick={() => setShowCategory(true)}s
         />
       </div>
 
@@ -153,3 +158,4 @@ Brand Temptin' stands for the same feeling and makes your food tempting and irre
 };
 
 export default Sticker;
+
