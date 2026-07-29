@@ -556,10 +556,10 @@ const navLinks = [
     name: "About Us",
     href: "/about",
     children: [
-      { name: "Our Story", href: "/about/our-story" },
-      { name: "Leadership Team", href: "/about/leadership" },
-      { name: "Our Mission", href: "/about/mission" },
-      { name: "Awards & Recognition", href: "/about/awards" },
+      { name: "The Company", href: "/about/our-story" },
+      { name: "Our Processes", href: "/about/leadership" },
+      { name: "Investors", href: "/about/mission" },
+      { name: "CSR / Our Social Initiatives", href: "/about/awards" },
     ],
   },
   {
@@ -680,7 +680,8 @@ useEffect(() => {
         {/* Right Side */}
         <div className="hidden items-center gap-8 lg:flex">
           <a
-            href="/shop"
+            href="https://www.rambandhu.com/"
+            target="blank"
             className="Paragraph_Medium HNR_FONT text-white flex flex-col group"
           >
             <div className="flex gap-2">
