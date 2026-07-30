@@ -191,11 +191,11 @@ const TEMPTIN_POPUP = {
   logo: "/images/home/TemptinLogo.png",
   accentColor: "#C3071C",
   categories: [
-    { id: "ketchup", name: "KETCHUP", image: "/images/home/ALL.png" },
-    { id: "sauces", name: "SAUCES", image: "/images/home/ALL.png" },
-    { id: "dips", name: "DIPS", image: "/images/home/ALL.png" },
-    { id: "chutneys", name: "CHUTNEYS", image: "/images/home/ALL.png" },
-    { id: "chinese-spices", name: "CHINESE SPICES", image: "/images/home/ALL.png" },
+    { id: "ketchup", name: "KETCHUP", image: "/images/home/Tem.png" },
+    { id: "sauces", name: "SAUCES", image: "/images/home/Tem.png" },
+    { id: "dips", name: "DIPS", image: "/images/home/Tem.png" },
+    { id: "chutneys", name: "CHUTNEYS", image: "/images/home/Tem.png" },
+    { id: "chinese-spices", name: "CHINESE SPICES", image: "/images/home/Tem.png" },
   ],
 };
 
@@ -203,10 +203,10 @@ const RBM_POPUP = {
   logo: "/images/home/RBMLogo.png",
   accentColor: "#B32727",
   categories: [
-    { id: "meat-masala", name: "MEAT MASALA", image: "/images/home/ALL.png" },
-    { id: "chicken-masala", name: "CHICKEN MASALA", image: "/images/home/ALL.png" },
-    { id: "mutton-biryani-mix", name: "MUTTON BIRYANI MIX", image: "/images/home/ALL.png" },
-    { id: "chicken-gravy", name: "CHICKEN GRAVY", image: "/images/home/ALL.png" },
+    { id: "meat-masala", name: "MEAT MASALA", image: "/images/home/RBM.png" },
+    { id: "chicken-masala", name: "CHICKEN MASALA", image: "/images/home/RBM.png" },
+    { id: "mutton-biryani-mix", name: "MUTTON BIRYANI MIX", image: "/images/home/RBM.png" },
+    { id: "chicken-gravy", name: "CHICKEN GRAVY", image: "/images/home/RBM.png" },
   ],
 };
 // -----------------------------------------------------------------------
@@ -360,7 +360,7 @@ Brand Temptin' stands for the same feeling and makes your food tempting and irre
       >
         <div
           ref={panelRef}
-          className="relative w-full max-w-6xl max-h-[90svh] overflow-y-auto rounded-2xl bg-[#fdf6ec]"
+          className="relative   overflow-y-auto rounded-2xl bg-[#fdf6ec] "
         >
           <button
             type="button"

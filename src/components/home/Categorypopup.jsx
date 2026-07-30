@@ -139,96 +139,60 @@ export default function CategoryPopup({
 
   if (!activeCategory) return null;
 
-  return (
-    <section
-      ref={sectionRef}
-      className="w-full h-[90vh] max-h-[90vh] flex flex-col bg-[#FFC55C] overflow-hidden rounded-2xl box-border"
-    >
-      {/* Logo bar */}
-      <div
-        className="cp-logo shrink-0 flex items-center justify-center py-3 sm:py-4 md:py-5 border-b"
-        style={{ borderColor: `${accentColor}33` }}
+ return (
+  <section
+    ref={sectionRef}
+    className="inline-block rounded-2xl overflow-hidden"
+  >
+    <div className="relative inline-block">
+      <img
+        ref={imageRef}
+        src={activeCategory.image}
+        alt={activeCategory.name}
+        className="block h-auto max-h-[60vh] w-auto object-contain"
+      />
+
+      {/* Prev */}
+      <button
+        type="button"
+        onClick={handlePrev}
+        aria-label="Previous category"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white flex items-center justify-center shadow-lg"
+        style={{ color: accentColor }}
       >
-        <img
-          src={logo}
-          alt="Brand logo"
-          className="h-9 sm:h-12 md:h-14 w-auto max-w-[55%] object-contain"
-        />
+        <ArrowIcon direction="left" />
+      </button>
+
+      {/* Next */}
+      <button
+        type="button"
+        onClick={handleNext}
+        aria-label="Next category"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white flex items-center justify-center shadow-lg"
+        style={{ color: accentColor }}
+      >
+        <ArrowIcon direction="right" />
+      </button>
+
+      {/* Dots */}
+      <div className="absolute bottom-4 inset-x-0 flex justify-center gap-2">
+        {categories.map((cat, i) => (
+          <button
+            key={cat.id}
+            type="button"
+            onClick={() => goTo(i, i > activeIndex ? 1 : -1)}
+            className="h-2 rounded-full transition-all"
+            style={{
+              width: i === activeIndex ? "22px" : "8px",
+              backgroundColor:
+                i === activeIndex
+                  ? "#fff"
+                  : "rgba(255,255,255,0.45)",
+            }}
+          />
+        ))}
       </div>
-
-       <div className=" inset-x-0 px-4 sm:px-8 py-3 sm:py-4 md:py-3 overflow-hidden">
-          <h3
-            ref={titleRef}
-            className="Paragraph_Large sm:Heading_3 text-sm sm:text-lg md:text-2xl font-bold tracking-[0.08em] text-center text-[#D52E12] break-words"
-           
-          >
-            {activeCategory.name}
-          </h3>
-        </div>
-
-      {/* Image stage — fills all remaining height, name + controls overlay it */}
-      <div className="relative flex-1 min-h-0 w-full ">
-        <img
-          ref={imageRef}
-          src={activeCategory.image}
-          alt={activeCategory.name}
-          className="absolute inset-0 h-full object-cover mx-auto"
-        />
-
-        {/* Legibility gradient */}
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/0 to-black/35 pointer-events-none" /> */}
-
-        {/* Category name */}
-        {/* <div className="absolute top-0 inset-x-0 px-4 sm:px-8 pt-3 sm:pt-5 md:pt-6 overflow-hidden">
-          <h3
-            ref={titleRef}
-            className="Paragraph_Large sm:Heading_3 text-sm sm:text-lg md:text-2xl font-bold tracking-[0.08em] text-center text-white break-words"
-            style={{ textShadow: "0 2px 10px rgba(0,0,0,0.45)" }}
-          >
-            {activeCategory.name}
-          </h3>
-        </div> */}
-
-        {/* Prev arrow */}
-        <button
-          type="button"
-          onClick={handlePrev}
-          aria-label="Previous category"
-          className="absolute left-2 sm:left-4 md:left-6 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white/90 hover:bg-white flex items-center justify-center shadow-lg transition-transform hover:scale-105"
-          style={{ color: accentColor }}
-        >
-          <ArrowIcon direction="left" />
-        </button>
-
-        {/* Next arrow */}
-        <button
-          type="button"
-          onClick={handleNext}
-          aria-label="Next category"
-          className="absolute right-2 sm:right-4 md:right-6 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white/90 hover:bg-white flex items-center justify-center shadow-lg transition-transform hover:scale-105"
-          style={{ color: accentColor }}
-        >
-          <ArrowIcon direction="right" />
-        </button>
-
-        {/* Dot indicators */}
-        <div className="absolute bottom-3 sm:bottom-5 inset-x-0 flex justify-center gap-1.5 sm:gap-2 flex-wrap px-4">
-          {categories.map((cat, i) => (
-            <button
-              key={cat.id}
-              type="button"
-              onClick={() => goTo(i, i > activeIndex ? 1 : -1)}
-              aria-label={`Go to ${cat.name}`}
-              className="h-1.5 sm:h-2 rounded-full transition-all shrink-0"
-              style={{
-                width: i === activeIndex ? "22px" : "8px",
-                backgroundColor:
-                  i === activeIndex ? "#ffffff" : "rgba(255,255,255,0.45)",
-              }}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 }
